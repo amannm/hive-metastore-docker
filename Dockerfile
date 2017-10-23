@@ -17,6 +17,7 @@ ENV HIVE_CONF_DIR=${HIVE_HOME}/conf
 
 ADD hive-site.xml ${HIVE_CONF_DIR}/hive-site.xml
 
-RUN ${HIVE_HOME}/bin/hive --service schemaTool -dbType postgres -initSchema
+#RUN ${HIVE_HOME}/bin/hive --service schemaTool -dbType postgres -initSchema
 
+EXPOSE 9083
 ENTRYPOINT ${HIVE_HOME}/bin/hive --service metastore
