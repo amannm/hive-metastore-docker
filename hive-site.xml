@@ -5,15 +5,15 @@
     </property>
     <property>
         <name>javax.jdo.option.ConnectionURL</name>
-        <value>jdbc:postgresql://localhost/metastore</value>
+        <value>jdbc:postgresql://172.17.0.1/metastore</value>
     </property>
     <property>
         <name>javax.jdo.option.ConnectionUserName</name>
-        <value>hiveuser</value>
+        <value>metastore</value>
     </property>
     <property>
         <name>javax.jdo.option.ConnectionPassword</name>
-        <value>mypassword</value>
+        <value>metastore</value>
     </property>
     <property>
         <name>fs.s3a.access.key</name>
